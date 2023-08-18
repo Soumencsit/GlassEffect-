@@ -1,0 +1,126 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:rgb(12, 12, 35); */
+    background: #161623;
+    font-family: "Trirong", serif;
+
+    overflow: hidden;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#f00 ,#f0f);
+    clip-path: circle(20% at 10%  12%);
+
+
+}
+
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#f00 ,#f0f);
+    clip-path: circle(30% at right 95%);
+
+
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+
+
+}
+
+.container .card{
+
+    position: relative;
+
+    height: 450px;
+    /* height: 70%;
+    width: 35%; */
+    width: 350px;
+    margin: 30px;
+    /* background-color: #fff; */
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border-top: 1px solid rgba(255,255, 255, 0.5);
+    border-left: 1px solid rgba(255,255, 255, 0.5);
+    backdrop-filter: blur(5px);
+
+}
+.container .card .content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5;
+
+}
+
+.imgbox{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.namebox {
+    margin-top: 10px;
+}
+
+.namebox h2{
+    color: whitesmoke;
+    z-index: 1;
+}
+
+.aboutbox {
+    margin-top: 20px;
+}
+
+.aboutbox p{
+    color: whitesmoke;
+    text-align: center;
+}
+.link a{
+    color: rgb(132, 126, 126);
+    text-align: center;
+   
+}
+.link{
+    margin-top: 10px;
+}

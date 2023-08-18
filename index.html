@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <div class="imgbox">
+                <img src="soumen-removebg-preview.png" alt="">
+            </div>
+          <div class="namebox"><h2>Soumen</h2></div>
+          <div class="aboutbox">
+                <p>
+                    Hey, I am a web developer, and I am also a coder. I made four websites. And my GITHUB link is attached below.
+                    I am familiar with C PYTHON JAVA HTML CSS JS. <br>Thank you.
+                </p>
+            </div>
+            <div class="link"><a href="https://github.com/Soumencsit">GitHub</a></div>
+            
+        </div>
+
+      </div>
+    </div>
+
+  
+    <script type="text/javascript" src="raw.githubusercontent.com_micku7zu_vanilla-tilt.js_master_dist_vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+  </body>
+</html>
